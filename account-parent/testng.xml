@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<suite name="Suite " verbose="1">
+	<test name="AllTest">
+		<classes>
+			<class name="com.juvenxu.mvnbook.account.captcha.AccountCaptchaServiceTest"></class>
+			<class name="com.juvenxu.mvnbook.account.captcha.RandomGeneratorTest"></class>
+			<class name="com.juvenxu.mvnbook.account.email.AccountEmailServiceTest"></class>
+			<class name="com.juvenxu.mvnbook.account.persist.AccountPersistServiceTest"></class>
+			<class name="com.juvenxu.mvnbook.account.service.AccountServiceTest"></class>
+		</classes>
+	</test>
+</suite>

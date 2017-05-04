@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<suite name="Suite2 " verbose="1">
+	<test name="EmailTest">
+		<classes>
+			<class name="com.juvenxu.mvnbook.account.email.AccountEmailServiceTest"></class>
+		</classes>
+	</test>
+</suite>

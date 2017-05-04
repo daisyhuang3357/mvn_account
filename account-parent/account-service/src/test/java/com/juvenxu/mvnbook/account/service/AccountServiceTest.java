@@ -1,18 +1,17 @@
 package com.juvenxu.mvnbook.account.service;
 
-import static junit.framework.Assert.*;
-
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.mail.Message;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import com.icegreen.greenmail.util.GreenMail;
 import com.icegreen.greenmail.util.GreenMailUtil;
@@ -25,10 +24,8 @@ public class AccountServiceTest
 
     private AccountService accountService;
 
-    @Before
-    public void prepare()
-        throws Exception
-    {
+    @BeforeMethod
+    public void prepare() throws Exception {
         String[] springConfigFiles = {
             "account-email.xml",
             "account-persist.xml",
@@ -51,16 +48,13 @@ public class AccountServiceTest
         greenMail.start();
 
         File persistDataFile = new File( "target/test-classes/persist-data.xml" );
-        if ( persistDataFile.exists() )
-        {
+        if ( persistDataFile.exists() ) {
             persistDataFile.delete();
         }
     }
 
     @Test
-    public void testAccountService()
-        throws Exception
-    {
+    public void testAccountService() throws Exception {
         // 1. Get captcha
         String captchaKey = accountService.generateCaptchaKey();
         accountService.generateCaptchaImage( captchaKey );
@@ -81,18 +75,15 @@ public class AccountServiceTest
         // 3. Read activation link
         greenMail.waitForIncomingEmail( 2000, 1 );
         Message[] msgs = greenMail.getReceivedMessages();
-        assertEquals( 1, msgs.length );
-        assertEquals( "Please Activate Your Account", msgs[0].getSubject() );
+        Assert.assertEquals( 1, msgs.length );
+        Assert.assertEquals( "Please Activate Your Account", msgs[0].getSubject() );
         String activationLink = GreenMailUtil.getBody( msgs[0] ).trim();
 
         // 3a. Try login but not activated
-        try
-        {
+        try {
             accountService.login( "juven", "admin123" );
-            fail( "Disabled account shouldn't be able to log in." );
-        }
-        catch ( AccountServiceException e )
-        {
+            Assert.fail( "Disabled account shouldn't be able to log in." );
+        } catch ( AccountServiceException e ) {
         }
 
         // 4. Activate account
@@ -103,21 +94,15 @@ public class AccountServiceTest
         accountService.login( "juven", "admin123" );
 
         // 5a. Login with incorrect password
-        try
-        {
+        try {
             accountService.login( "juven", "admin456" );
-            fail( "Password is incorrect, shouldn't be able to login." );
+            Assert.fail( "Password is incorrect, shouldn't be able to login." );
+        }catch ( AccountServiceException e ) {
         }
-        catch ( AccountServiceException e )
-        {
-        }
-
     }
 
-    @After
-    public void stopMailServer()
-        throws Exception
-    {
+    @AfterMethod
+    public void stopMailServer() throws Exception {
         greenMail.stop();
     }
 }

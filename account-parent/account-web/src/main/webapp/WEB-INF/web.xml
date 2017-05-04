@@ -4,9 +4,6 @@
 
 <web-app>
 	<display-name>Sample Maven Project: Account Service</display-name>
-	<listener>
-		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-	</listener>
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>
@@ -16,6 +13,9 @@
 			classpath:/account-service.xml
 		</param-value>
 	</context-param>
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
 	<servlet>
 		<servlet-name>CaptchaImageServlet</servlet-name>
 		<servlet-class>com.juvenxu.mvnbook.account.web.CaptchaImageServlet</servlet-class>
