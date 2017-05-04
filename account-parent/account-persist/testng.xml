@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<suite name="Suite3" verbose="1">
-	<test name="PersistTest">
-		<classes>
-			<class name="com.juvenxu.mvnbook.account.persist.AccountPersistServiceTest"></class>
-		</classes>
-	</test>
-</suite>
