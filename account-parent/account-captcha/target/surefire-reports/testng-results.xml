@@ -2,38 +2,38 @@
 <testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1 " duration-ms="539" started-at="2017-05-04T10:02:20Z" finished-at="2017-05-04T10:02:21Z">
+  <suite name="Suite1 " duration-ms="553" started-at="2017-05-05T01:30:25Z" finished-at="2017-05-05T01:30:26Z">
     <groups>
     </groups>
-    <test name="CaptchaTest" duration-ms="539" started-at="2017-05-04T10:02:20Z" finished-at="2017-05-04T10:02:21Z">
+    <test name="CaptchaTest" duration-ms="553" started-at="2017-05-05T01:30:25Z" finished-at="2017-05-05T01:30:26Z">
       <class name="com.juvenxu.mvnbook.account.captcha.AccountCaptchaServiceTest">
-        <test-method status="PASS" signature="prepare()[pri:0, instance:com.juvenxu.mvnbook.account.captcha.AccountCaptchaServiceTest@1888ff2c]" name="prepare" is-config="true" duration-ms="178" started-at="2017-05-04T18:02:20Z" finished-at="2017-05-04T18:02:21Z">
+        <test-method status="PASS" signature="prepare()[pri:0, instance:com.juvenxu.mvnbook.account.captcha.AccountCaptchaServiceTest@1888ff2c]" name="prepare" is-config="true" duration-ms="178" started-at="2017-05-05T09:30:25Z" finished-at="2017-05-05T09:30:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- prepare -->
-        <test-method status="PASS" signature="testGenerateCaptcha()[pri:0, instance:com.juvenxu.mvnbook.account.captcha.AccountCaptchaServiceTest@1888ff2c]" name="testGenerateCaptcha" duration-ms="284" started-at="2017-05-04T18:02:21Z" finished-at="2017-05-04T18:02:21Z">
+        <test-method status="PASS" signature="testGenerateCaptcha()[pri:0, instance:com.juvenxu.mvnbook.account.captcha.AccountCaptchaServiceTest@1888ff2c]" name="testGenerateCaptcha" duration-ms="296" started-at="2017-05-05T09:30:26Z" finished-at="2017-05-05T09:30:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGenerateCaptcha -->
-        <test-method status="PASS" signature="prepare()[pri:0, instance:com.juvenxu.mvnbook.account.captcha.AccountCaptchaServiceTest@1888ff2c]" name="prepare" is-config="true" duration-ms="22" started-at="2017-05-04T18:02:21Z" finished-at="2017-05-04T18:02:21Z">
+        <test-method status="PASS" signature="prepare()[pri:0, instance:com.juvenxu.mvnbook.account.captcha.AccountCaptchaServiceTest@1888ff2c]" name="prepare" is-config="true" duration-ms="21" started-at="2017-05-05T09:30:26Z" finished-at="2017-05-05T09:30:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- prepare -->
-        <test-method status="PASS" signature="testValidateCaptchaCorrect()[pri:0, instance:com.juvenxu.mvnbook.account.captcha.AccountCaptchaServiceTest@1888ff2c]" name="testValidateCaptchaCorrect" duration-ms="23" started-at="2017-05-04T18:02:21Z" finished-at="2017-05-04T18:02:21Z">
+        <test-method status="PASS" signature="testValidateCaptchaCorrect()[pri:0, instance:com.juvenxu.mvnbook.account.captcha.AccountCaptchaServiceTest@1888ff2c]" name="testValidateCaptchaCorrect" duration-ms="22" started-at="2017-05-05T09:30:26Z" finished-at="2017-05-05T09:30:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidateCaptchaCorrect -->
-        <test-method status="PASS" signature="prepare()[pri:0, instance:com.juvenxu.mvnbook.account.captcha.AccountCaptchaServiceTest@1888ff2c]" name="prepare" is-config="true" duration-ms="12" started-at="2017-05-04T18:02:21Z" finished-at="2017-05-04T18:02:21Z">
+        <test-method status="PASS" signature="prepare()[pri:0, instance:com.juvenxu.mvnbook.account.captcha.AccountCaptchaServiceTest@1888ff2c]" name="prepare" is-config="true" duration-ms="16" started-at="2017-05-05T09:30:26Z" finished-at="2017-05-05T09:30:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- prepare -->
-        <test-method status="PASS" signature="testValidateCaptchaIncorrect()[pri:0, instance:com.juvenxu.mvnbook.account.captcha.AccountCaptchaServiceTest@1888ff2c]" name="testValidateCaptchaIncorrect" duration-ms="6" started-at="2017-05-04T18:02:21Z" finished-at="2017-05-04T18:02:21Z">
+        <test-method status="PASS" signature="testValidateCaptchaIncorrect()[pri:0, instance:com.juvenxu.mvnbook.account.captcha.AccountCaptchaServiceTest@1888ff2c]" name="testValidateCaptchaIncorrect" duration-ms="6" started-at="2017-05-05T09:30:26Z" finished-at="2017-05-05T09:30:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidateCaptchaIncorrect -->
       </class> <!-- com.juvenxu.mvnbook.account.captcha.AccountCaptchaServiceTest -->
       <class name="com.juvenxu.mvnbook.account.captcha.RandomGeneratorTest">
-        <test-method status="PASS" signature="testGetRandomString()[pri:0, instance:com.juvenxu.mvnbook.account.captcha.RandomGeneratorTest@5a01ccaa]" name="testGetRandomString" duration-ms="1" started-at="2017-05-04T18:02:21Z" finished-at="2017-05-04T18:02:21Z">
+        <test-method status="PASS" signature="testGetRandomString()[pri:0, instance:com.juvenxu.mvnbook.account.captcha.RandomGeneratorTest@5a01ccaa]" name="testGetRandomString" duration-ms="1" started-at="2017-05-05T09:30:26Z" finished-at="2017-05-05T09:30:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetRandomString -->

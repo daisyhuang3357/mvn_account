@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite2 " duration-ms="305" started-at="2017-05-04T10:02:18Z" finished-at="2017-05-04T10:02:18Z">
+  <suite name="Suite2 " duration-ms="314" started-at="2017-05-05T01:30:23Z" finished-at="2017-05-05T01:30:23Z">
     <groups>
     </groups>
-    <test name="EmailTest" duration-ms="305" started-at="2017-05-04T10:02:18Z" finished-at="2017-05-04T10:02:18Z">
+    <test name="EmailTest" duration-ms="314" started-at="2017-05-05T01:30:23Z" finished-at="2017-05-05T01:30:23Z">
       <class name="com.juvenxu.mvnbook.account.email.AccountEmailServiceTest">
-        <test-method status="PASS" signature="startMailServer()[pri:0, instance:com.juvenxu.mvnbook.account.email.AccountEmailServiceTest@1fbc7afb]" name="startMailServer" is-config="true" duration-ms="22" started-at="2017-05-04T18:02:18Z" finished-at="2017-05-04T18:02:18Z">
+        <test-method status="PASS" signature="startMailServer()[pri:0, instance:com.juvenxu.mvnbook.account.email.AccountEmailServiceTest@1fbc7afb]" name="startMailServer" is-config="true" duration-ms="22" started-at="2017-05-05T09:30:23Z" finished-at="2017-05-05T09:30:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startMailServer -->
-        <test-method status="PASS" signature="testSendMail()[pri:0, instance:com.juvenxu.mvnbook.account.email.AccountEmailServiceTest@1fbc7afb]" name="testSendMail" duration-ms="271" started-at="2017-05-04T18:02:18Z" finished-at="2017-05-04T18:02:18Z">
+        <test-method status="PASS" signature="testSendMail()[pri:0, instance:com.juvenxu.mvnbook.account.email.AccountEmailServiceTest@1fbc7afb]" name="testSendMail" duration-ms="280" started-at="2017-05-05T09:30:23Z" finished-at="2017-05-05T09:30:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSendMail -->
-        <test-method status="PASS" signature="stopMailServer()[pri:0, instance:com.juvenxu.mvnbook.account.email.AccountEmailServiceTest@1fbc7afb]" name="stopMailServer" is-config="true" duration-ms="0" started-at="2017-05-04T18:02:18Z" finished-at="2017-05-04T18:02:18Z">
+        <test-method status="PASS" signature="stopMailServer()[pri:0, instance:com.juvenxu.mvnbook.account.email.AccountEmailServiceTest@1fbc7afb]" name="stopMailServer" is-config="true" duration-ms="0" started-at="2017-05-05T09:30:23Z" finished-at="2017-05-05T09:30:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopMailServer -->
